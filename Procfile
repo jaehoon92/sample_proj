@@ -1,1 +1,1 @@
-web: python hello.py
+web: python sample_proj/server/server.py
