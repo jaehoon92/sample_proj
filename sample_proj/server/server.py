@@ -8,11 +8,11 @@ app = Flask(__name__)
 #db = SQLAlchemy(app)
 
 
-#from views import *
+from views import *
 
-@app.route('/')
-def hello():
-	return 'Hello Jaehoon'
+#@app.route('/')
+#def hello():
+#	return 'Hello Jaehoon'
 
 if __name__ == '__main__':
 	# Bind the PORT if defined, otherwise default to 5000.
