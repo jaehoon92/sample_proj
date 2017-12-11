@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 #from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -16,4 +17,4 @@ def hello():
 if __name__ == '__main__':
 	# Bind the PORT if defined, otherwise default to 5000.
 	port = int(os.environ.get('PORT', 5000))
-	app.run(host='0.0.0.0', port=port)
+	app.run(port=port)
